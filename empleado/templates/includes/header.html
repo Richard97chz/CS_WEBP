@@ -1,0 +1,49 @@
+{% load static %}
+
+<div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+
+        <div class="top-bar-left">
+          <ul class="menu">
+            <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+            <li><img src="{% static 'images/logo.png' %}" alt="  " width="100"></li> 
+                    <!--redirecciona a añadir empleado-->
+          </ul>
+        </div>
+
+        <!--
+        <li><a href="{% url 'persona_app:empleado_add' %}" class="button">Registrar nuevo</a></li> 
+        <li>
+          <img src="{% static 'images/logo.png' %}" alt="  " width="100">
+        <li class="menu-text"></li><img src="{ %  static 'images/logo.jpg' %}"/></li>  <--comentado estaba
+        </li>
+        -->
+        <li>
+          <a href="{% url 'persona_app:empleados_all' %}"><h4>Listar</h4></a>
+        </li>
+
+        <li><a href="{% url 'departamento_app:departamento_list' %}"><h4>Departamento</h4></a></li> 
+                              <!--error si no declaro nombre a las url de app depart-->
+        <li><a href="{% url 'persona_app:empleados_admin' %}"><h4>Administrar</h4></a></li>
+        <li><a href="{% url 'departamento_app:nuevo_departamento' %}"><h4>Nuevo departamento</h4></a></li>
+      </ul>
+    </div>
+
+
+    <div class="top-bar-right">
+      <ul class="menu">
+        <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+        <li><a href="{% url 'persona_app:empleado_add' %}" class="hollow button"  href="#"><h5>Registrar nuevo</h5></a></li> 
+                <!--redirecciona a añadir empleado-->
+      </ul>
+    </div>
+
+    <div class="top-bar-right">
+      <ul class="menu">
+        <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+        <li><a href="{% url 'home_app:ingresar' %}" class="hollow button alert" href="#"><h5>Salir</h5></a></li> 
+                <!--redirecciona a añadir empleado-->
+      </ul>
+    </div>
+  </div>

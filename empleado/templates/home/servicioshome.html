@@ -1,0 +1,105 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+  
+
+
+  <link rel="stylesheet" href="{% static 'css/estilos2.css' %}" />
+ 
+    <div class="servicios">
+      <div class="servicios__items">
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Diagnostico_Y_Reparación_Del_Sistema.jpg' %}"  alt="" />
+        
+          </div>
+          <div class="items_textos">
+            <h2>Diagnostico Y Reparación Del Sistema</h2>
+            <p>
+                Solucionamos todo el sistema eléctrico de tu 
+                unidad, te atendemos en tu propia empresa.
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Luces_Filtros_Frenos_Y_Bateria.jpg' %}"  alt="" />
+          </div>
+          <div class="items_textos">
+            <h2>Luces Filtros Frenos Y Bateria</h2>
+            <p>
+                De todo para que este al 100% operativa en todo momento.
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/mantenimiento_de_vehículos.jpg' %}"  alt="" />
+             
+          </div>
+          <div class="items_textos">
+            <h2>mantenimiento de vehículos</h2>
+            <p>
+                Tus unidades merecen tener la mejor vida útil y 
+                tus neumáticos también, te damos el mantenimiento 
+                gratis.
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/Neumáticos_Y_Balanceo_De_Ruedas.jpg' %}"  alt="" />
+          </div>
+          <div class="items_textos">
+            <h2>Neumáticos Y Balanceo De Ruedas</h2>
+            <p>
+                Equilibramos el peso de tus ruedas, de modo que garantizamos 
+                que las llantas de su vehículo giren sin vibrar
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/sistema_hidráulico.jpg' %}" alt="" />
+        
+          </div>
+          <div class="items_textos">
+            <h2>sistema hidráulico</h2>
+            <p>
+                Te ayudamos a que funcione y realizar 
+                tus operaciones logísticas.
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items_img">
+            <img src="{% static 'images/transporte_y_distribucion.jpg' %}"alt="" />
+          </div>
+          <div class="items_textos">
+            <h2>transporte y distribucion</h2>
+            <p>
+                Sabemos que tu mercancía no se puede detener, 
+                Por eso te brindamos el servicio de auxilio 
+                mecánicos las 24 horas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!--Inicio de la imagen de portada-->
+<!--eliminado-->
+<!--Fin de la imagen de portada-->
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}

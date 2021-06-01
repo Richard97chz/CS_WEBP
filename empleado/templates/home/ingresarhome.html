@@ -1,0 +1,89 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+    ></script>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>LOGIN SERVIPAC</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">INGRESAR</h2>
+            
+
+            <form class="cell callout grid-x grid-margin-x" method="POST">{% csrf_token %}
+              <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                  
+                  <div class="medium-12 cell">
+                    <label>Usuario
+                      <input type="text" placeholder="USUARIO">
+                    </label>
+                    <label>contraseña
+                      <input type="text" placeholder="CONTRASEÑA">
+                    </label>
+                    
+                    <button type="submit" class="button">INGRESAR</button>
+                  </div>
+                  
+                </div>
+                <p class="social-text">INGRESAR CON OTRA PLATAFORMA</p>
+              </div>
+            </form>
+
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>¿Alguna duda?</h3>
+            <p>
+              Comunicate con soporte técnico servipacsoporte@servipac.com.pe
+            </p>
+            <i class="fas fa-envelope"></i>
+          </div>
+          <img src="{% static 'images/log.svg' %}" alt="">
+          
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+
+</html>
+
+{% endblock content %}

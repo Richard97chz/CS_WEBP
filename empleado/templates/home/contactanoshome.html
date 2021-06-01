@@ -1,0 +1,75 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}" />
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+
+
+
+<section class=" " id="contactanos_container">
+    <div class="row align-items-center caja_contacto ">
+        <h2 id="contactanos" class="titulo ">¡Regístrate, y te regalamos 1 consulta gratuita con un especialista!</h2>
+        <div class="caja__contacto">
+            <div class="contactar col-4 col-md-6 col-sm-12 ">
+                <form>
+                    <div class="form-group espaci ">
+                        <label for="exampleFormControlInput1 ">NOMBRE y APELLIDO</label>
+                        <input type="text " class="form-control " onkeypress="return letra(event)" placeholder="NOMBRE y APELLIDO " required>
+                    </div>
+                    <div class="form-group espaci ">
+                        <label for="exampleFormControlInput1 ">CORREO</label>
+                        <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="CORREO " required>
+                    </div>
+                    <div class="form-group espaci ">
+                        <label for="exampleFormControlInput1 ">
+                        TELEFONO
+                    </label>
+                        <input type="text " class="form-control " onkeypress="return numeros(event)" placeholder="NUMERO DE TELEFONO " required>
+                    </div>
+                    <div class="form-group espaci ">
+                        <label for="exampleFormControlTextarea1 ">
+                        MENSAJE O CONSULTA
+                    </label>
+                        <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 " required>
+                    </textarea>
+                    </div>
+                    <button type="submit " class="btn btn-primary col-lg-12 col-xl-2 mt-2">REGISTRAR</button>
+
+                </form>
+            </div>
+            <div class=" col-4 col-md-6 col-sm-12 caja-mapa">
+                <div class="mapa ">
+                    <a href="https://goo.gl/maps/GQybnVEtwnMT8EH56 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16135231.61288914!2d-84.06739743910542!3d-9.130472692183531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2zUGVyw7o!5e0!3m2!1ses!2spe!4v1620188007667!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            
+                            
+                    </a>
+                </div>
+
+                <div class="location-container container-sm border row align-items-center ">
+                    <div class=" col-3 ">
+                        <div class="location ">
+                            <div class="location-icon ">
+                                <i class="bi bi-cursor-fill "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <p class="my-1 ">Ubicacion</p>
+                        <p class="my-1 ">La libertad y toda región norte del Perú</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}

@@ -1,0 +1,62 @@
+
+#equipo_container {
+    background-color: #B4DEFF;
+    height: 630px;
+    width: 100%;
+}
+
+#equipo_container>p,
+#equipo_container>h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#equipo_container>.imagenes>.row {
+    margin: 5px;
+}
+
+#equipo_container>.imagenes>.row>.img {
+    position: relative;
+}
+
+#equipo_container>.imagenes>.row>.img>img {
+    width: 100%;
+    height: 45%;
+}
+
+#equipo_container>.imagenes>.row>.img>.fondo {
+    position: absolute;
+    width: 93.5%;
+    height: 45%;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(15, 48, 56, 0.62);
+}
+
+#equipo_container>.imagenes>.row {
+    margin-top: 30px;
+}
+
+#equipo_container>.imagenes>.row>.img>.fondo>h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+#equipo_container>.carta h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(82, 79, 79);
+    text-transform: uppercase;
+}
+
+#equipo_container>.carta p {
+    font-size: 20px;
+    color: rgb(255, 17, 17);
+    text-align: start;
+}
+

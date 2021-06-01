@@ -1,0 +1,273 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.activar {
+    background-color: #FFF876 !important;
+}
+
+.inicio>video {
+    width: 100%;
+    height: 700px;
+}
+
+
+/*----nosotros---*/
+
+#nosotros_container {
+    height: 400px;
+    /* background-color: #5d9cdb; */
+    background-color: #B4DEFF;
+}
+
+.caja-img>img {
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.cuadro_texto_n {
+    margin-top: 70px;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*---servicios */
+
+#productos_container {
+    height: 550px;
+}
+
+#productos_container>.carrucel {
+    height: 330px;
+}
+
+.carousel-item img {
+    height: 430px;
+}
+
+.titulo {
+    text-align: center;
+    color: #273138 !important;
+    font-size: 40px;
+    padding: 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+
+.carrucel_mensaje {
+    color: #ffffff;
+    font-weight: 700 !important;
+}
+
+.carrucel_mensaje {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 30px;
+    height: 90px;
+    margin-bottom: 15px;
+    width: 75%;
+    padding: 0;
+}
+
+
+/*equipo*/
+
+#equipo_container {
+    background-color: #B4DEFF;
+    height: 630px;
+    width: 100%;
+}
+
+#equipo_container>p,
+#equipo_container>h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#equipo_container>.imagenes>.row {
+    margin: 5px;
+}
+
+#equipo_container>.imagenes>.row>.img {
+    position: relative;
+}
+
+#equipo_container>.imagenes>.row>.img>img {
+    width: 100%;
+    height: 45%;
+}
+
+#equipo_container>.imagenes>.row>.img>.fondo {
+    position: absolute;
+    width: 93.5%;
+    height: 45%;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(15, 48, 56, 0.62);
+}
+
+#equipo_container>.imagenes>.row {
+    margin-top: 30px;
+}
+
+#equipo_container>.imagenes>.row>.img>.fondo>h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+#equipo_container>.carta h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(82, 79, 79);
+    text-transform: uppercase;
+}
+
+#equipo_container>.carta p {
+    font-size: 20px;
+    color: rgb(255, 17, 17);
+    text-align: start;
+}
+
+
+/*---formulario---*/
+
+
+/*contactanos */
+
+.contactar {
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000059;
+    border-radius: 8px;
+}
+
+.mapa {
+    padding-left: 70px;
+}
+
+.espaci {
+    margin-top: 10px;
+}
+
+.location {
+    margin: auto;
+    padding: 5px;
+}
+
+.location i {
+    font-size: 30px;
+}
+
+.location-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-form {
+    padding: 20px 40px;
+    background-color: #E1F2FF;
+    border-radius: 10%;
+    margin: 20px 10px;
+}
+
+.location-container {
+    width: 380px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 69px;
+    margin-left: 70px;
+    border: 3px solid #212529 !important;
+    border-radius: 20px 20px 0px 20px;
+    margin-top: 15px;
+}
+
+#comentario {
+    height: 100px;
+}
+
+.caja_contacto {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.caja__contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 50px;
+}
+
+
+/*---footer---*/
+
+body>footer {
+    background-color: #f7d794;
+    padding-top: 50px;
+}
+
+.cuadros>h3 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #30336b;
+}
+
+.texto>h4 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes>a>i {
+    font-size: 50px;
+    color: #000;
+    margin: 10px;
+}
+
+.redes>a:nth-child(3)>i:hover {
+    color: #c4302b;
+}
+
+.redes>a:nth-child(2)>i:hover {
+    color: #0e3344;
+}
+
+.redes>a:nth-child(1)>i:hover {
+    color: rgb(19, 64, 160);
+}

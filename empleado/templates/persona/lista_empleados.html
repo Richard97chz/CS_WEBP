@@ -1,0 +1,98 @@
+<!--Inicialmente copiamos todo de list_all, porque es similar-->
+{% extends 'base.html' %}
+
+{% block content %}
+{% include "includes/header.html" %}
+
+<!--{{object_list}}-->
+
+<div class="grid-container">
+    <!--dentro construimos los 3 bloques-->
+    <div class="grid-x">
+        <h1 class="cell">Lista empleados</h1>
+        <!--El form ha sido borrado porque no hay formulario-->
+
+        <div class="cell">
+            <!--Aqui va las tablas-->
+            <table>
+                <thead>
+                  <tr>
+                    <th width="200">ID</th>
+                    <th>NOMBRES</th>
+                    <th width="150">APELLIDOS</th>
+                    <th width="150">DEPARTAMENTO</th>
+                    <th width="150">ACCIÓN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <!--elementos que se cargan en la lista-->
+                    {% for e in object_list %}
+                    <tr>
+                        <td>{{e.id}}</td>
+                        <td>{{e.first_name}}</td>
+                        <td>{{e.last_name}}</td>
+                        <td>{{e.departamento}}</td>
+                        <!--<td><a class="button warning" href="#">ver</a></td>   -> Acción ver-->
+                        <td>
+                            <a class="button success" href="{% url 'persona_app:modificar_empleado' e.id %}">Editar</a> 
+                                                             <!--el id xq necesitamos saber que emmleado editar (pk)-->
+                        </td>
+                        <td>
+                            <a class="button alert" href="{% url 'persona_app:eliminar_empleado' e.id %}">Eliminar</a>
+                        </td>
+                    </tr> 
+                    {% endfor %}
+                </tbody>
+              </table>
+        </div>
+
+        <!--Para paginación-->
+        <div class="cell">
+            {% if is_paginated %}
+            <nav aria-label="Pagination">
+                <ul class="pagination">
+
+                    {% if page_obj.has_previous %}
+                    <li class="pagination-previous">
+                        <a href="?page={{page_obj.previous_page_number}}">Atrás</a>
+                    </li>                      
+                    {% endif %}
+                    <!--
+                    {% for pagina in paginator.page_range %}
+                    <li><a href="?page={{pagina}}">{{pagina}}</a></li>
+                    {% endfor %}
+                    -->
+
+                    <!--resaltar página-->
+                    {% for pagina in paginator.page_range %}
+                    {%ifequal pagina page_obj.number %}
+                    <li class="current"><span class="show-for-sr">You're on page</span>{{pagina}}</li>
+                    {% else %}
+                    <li class=""><a href="?page={{pagina}}">{{ pagina }}</a></li>
+                    {% endifequal %}
+                    {% endfor %}
+                    
+                    <!--valdiamos que exista la pag de atrás y siguiente-->
+                    {%if page_obj.has_next %}   
+                    <li class="pagination-next">
+                        <a href="?page={{page_obj.next_page_number}}">Siguiente</a>
+                    </li> 
+                    {% endif %}    
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+
+    </div>
+
+    <!--<h1>Lista de todos los empleados</h1>-->
+    <!--
+    <ul>
+        {%for e in object_list %}
+            <li>{{e}}</li>
+        {%endfor %}
+    </ul>
+    -->
+</div>
+
+{% endblock content %}

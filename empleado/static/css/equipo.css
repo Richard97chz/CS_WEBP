@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.equipo {
+    width: 100%;
+    background-color: #B4DEFF;
+    height: auto;
+}
+
+.texto {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.texto h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.trabajadores {
+    width: 20%;
+}
+
+.trabajadores img {
+    min-height: 200px;
+    width: 100%;
+    height: 300px;
+}
+
+.descripcion {
+    margin: 10px;
+}
+
+.descripcion h2 {
+    font-size: 30px;
+}
+
+.descripcion p {
+    font-size: 20px;
+}
+
+
+/*---responsive---*/
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1280px) {
+    .trabajadores img {
+        min-height: 200px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 993px) {}
+
+@media screen and (max-width:769px) {
+    .trabajadores {
+        width: 44%;
+        flex-grow: 2;
+        margin: 10px;
+    }
+    /*2 images*/
+}
+
+@media screen and (max-width: 577px) {
+    .trabajadores {
+        width: 100%;
+        flex-grow: 1;
+        margin: 20px;
+    }
+    .trabajadores img {
+        min-height: 200px;
+        width: 100%;
+        height: 400px;
+    }
+}

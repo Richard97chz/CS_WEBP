@@ -1,0 +1,164 @@
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1280px) {
+    #equipo_container>.imagenes>.row>.img>.fondo {
+        width: 92.5%;
+    }
+    #nosotros_container {
+        margin-top: -15px;
+    }
+    #nosotros_container,
+    #equipo_container,
+    #productos_container,
+    #contactanos_container {
+        height: auto;
+    }
+    .caja_personal {
+        margin-bottom: 50px !important;
+    }
+    .caja_personal>img {
+        width: 100%;
+        height: 300px !important;
+    }
+    #equipo_container>.imagenes>.row>.img>.fondo {
+        width: 95.8%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    #nosotros_container,
+    #equipo_container,
+    #productos_container,
+    #contactanos_container {
+        height: auto;
+    }
+    .inicio {
+        margin-top: -150px;
+    }
+    #nosotros_container {
+        margin-top: -90px;
+    }
+    #nosotros_container {
+        height: 400px;
+        background-color: #B4DEFF;
+        margin-top: -95px;
+        margin-top: -15px;
+    }
+    #equipo_container>.imagenes>.row>.img>.fondo {
+        width: 95.5%;
+    }
+    .caja_contacto {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    #equipo_container {
+        height: auto;
+        padding-bottom: -30px;
+    }
+    #equipo_container>.imagenes>.row>.img>.fondo {
+        width: 93.5%;
+    }
+    #equipo_container>.imagenes>.row>.img {
+        margin-bottom: -150px;
+        /* margin-bottom: -280px; */
+    }
+    #nosotros_container {
+        margin-top: -150px;
+    }
+    .cuadro_texto_n {
+        margin-top: 40px;
+    }
+    .caja-img>img {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+        height: 300px;
+    }
+    .caja_contacto {
+        margin-left: 10px;
+    }
+    .contactar {
+        margin-right: 5px;
+    }
+    .mapa {
+        padding-left: 10px;
+    }
+    .mapa>a>iframe {
+        width: 320px;
+    }
+    .location-container {
+        width: 333px;
+        margin-left: 0px;
+    }
+    .cuadros>h3 {
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #30336b;
+    }
+    .cuadros {
+        margin-bottom: 50px;
+    }
+    .cuadros>.texto>h5 {
+        font-size: 15px;
+    }
+    .redes>a>i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    #nosotros_container,
+    #equipo_container,
+    #productos_container,
+    #contactanos_container {
+        height: auto;
+    }
+    .inicio {
+        margin-top: -250px;
+        margin-bottom: -200px;
+    }
+    .caja_personal {
+        margin-bottom: 50px !important;
+    }
+    .caja_personal>img {
+        width: 100%;
+        height: 300px !important;
+    }
+    #equipo_container>.imagenes>.row>.img>.fondo {
+        width: 95.8%;
+        height: 300px;
+    }
+    .caja__contacto {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .contactar {
+        margin-left: -15px;
+        margin-bottom: 30px;
+    }
+    .caja-mapa {
+        margin-left: 150px;
+    }
+    .caja__nosotros {
+        width: 100%;
+    }
+}
+
+
+/* @media screen and (max-width: 380px) {
+    #equipo>.imagenes>.row>.img>.fondo {
+        width: 93%;
+    }
+    #nosotros>.row>.imagen>img {
+        padding-left: 0px;
+        margin-left: 65px;
+        height: 230px;
+    }
+} */

@@ -1,0 +1,73 @@
+{% extends 'basehome.html' %}
+
+{% block title %} Pagina de inicio SERVIPAC{% endblock title %}
+
+
+{% block content %}
+
+{% include 'includes/headerhome.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/equipo.css' %}" >
+    <title></title>
+</head>
+
+<body>
+    <div class="equipo">
+        <div class="texto">
+            <h1>nuestro equipo</h1>
+            <p> Nuestro Equipo Sabemos lo que hacemos, sabemos lo que tus unidades se merece</p>
+        </div>
+        <div class="imagenes">
+            <div class="trabajadores">
+                <img src="{% static 'images/Jose_Pacheco-Jefe_de_logística.jpg' %}" alt="">
+                <div class="descripcion">
+                    <h2>Jose Pacheco</h2>
+                    <p>
+                        Jefe de logística
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Brayan_Alan-Técnico_de_mantenimiento.jpg' %}" alt="">
+                <div class="descripcion">
+                    <h2>Fernando Romero</h2>
+                    <p>
+                        Ingeniero Supervisor
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Fernando_Romero-Ingeniero_Supervisor.jpg' %}"  alt="">
+                <div class="descripcion">
+                    <h2>Brayan Alan</h2>
+                    <p>
+                        Técnico de mantenimiento
+                    </p>
+                </div>
+            </div>
+            <div class="trabajadores">
+                <img src="{% static 'images/Ronald_Rivera-Asesor_de_Servicio.jpg' %}" alt="">
+                <div class="descripcion">
+                    <h2>Ronald Rivera</h2>
+                    <p>
+                        Asesor de Servicio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{% include 'includes/footerhome.html' %}
+
+{% endblock content %}

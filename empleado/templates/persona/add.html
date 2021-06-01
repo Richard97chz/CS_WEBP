@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Registrar Empleado
+{% endblock title %}
+
+
+{% block content %}
+    {% include 'includes/header.html' %}
+
+    
+<div class="grid-container">
+    <div class="grid-x">
+        <h1 class="cell">Registrar Empleado</h1>
+        <form class="cell grid-x grid-margin-x" method="POST" enctype="multipart/form-data">{% csrf_token %} 
+                                        <!--IMPORTANTE!!! añadir: enctype="multipart/form-data": indica a 
+                                        html que debe aceptar archivos que tengan otro tipo de extensión-->
+            <div class="medium-6 cell">
+                <label>Nombres:
+                    {{form.first_name}}
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Apellidos:
+                    {{form.last_name}}
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Trabajo
+                    {{form.job}}
+                </label>
+            </div>
+            <div class="medium-6 cell">
+                <label>Departamento:
+                    {{form.departamento}}
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <label>Habilidades:
+                    {{form.habilidades}}
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <label>foto:
+                    {{form.avatar}}
+                </label>
+            </div>
+            <div class="medium-12 cell">
+                <button type="submit" class="button success">Guardar</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!--
+<input type="text" placeholder="nombres">
+<input type="text" placeholder="apellidos">  
+-->
+<!--
+{{form.as_p}}   
+-->
+<!--
+<form method="POST">{% csrf_token %}   token de seguridad para q el servidor acepte la petición
+    {{form.as_p}}
+    <button type="Submit">Agregar</button>     boton que hace ejecución del metodo
+</form>
+-->
+{% endblock content %}

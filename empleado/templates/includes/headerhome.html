@@ -1,0 +1,106 @@
+{% load static %}
+
+<!--
+<div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+
+        <div class="top-bar-left">
+          <ul class="menu">
+          -->
+            <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+<!--            <li><img src="{% static 'images/logo.png' %}" alt="  " width="100"></li>  -->
+                    <!--redirecciona a añadir empleado-->
+<!--          </ul>
+        </div>
+
+        <li><a href="{% url 'home_app:inicio' %}"><h4>INICIO</h4></a></li>
+        
+        <li><a href="{% url 'home_app:servicios' %}"><h4>SERVICIOS</h4></a></li>
+        
+        <li><a href="{% url 'home_app:equipo' %}"><h4>EQUIPO</h4></a></li>
+        
+        <li><a href="{% url 'home_app:contactanos' %}"><h4>CONTÁCTANOS</h4></a></li>
+        
+      </ul>
+    </div>
+  
+
+    <div class="top-bar-right">
+      <ul class="menu"> -->
+        <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+<!--        <li><a href="{% url 'home_app:ingresar' %}" class="button"><h5>INGRESAR</h5></a></li> -->
+                <!--redirecciona a añadir empleado-->
+<!--      </ul>
+    </div>
+  </div>
+-->
+<!--
+<nav id="menu" class="navbar  sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container-lg">
+    <a class="navbar-brand  " href="#">
+        <img class="img-fluid rounded float-start" src="{% static 'images/logo.png' %}" alt="" width="80" height="50" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarsExample09">
+      <ul class="navbar-nav nav nav-pills">
+        
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="{% url 'home_app:inicio' %}">INICIO</a>
+          </li>
+        
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'home_app:servicios' %}">SERVICIOS</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'home_app:equipo' %}">EQUIPO</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'home_app:contactanos' %}">CONTÁCTANOS</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link"  href="{% url 'home_app:ingresar' %}" class="button">INGRESAR</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+-->
+
+
+<div class="top-bar sticky-top ">
+  <div class="top-bar-left">
+    
+    <ul class="dropdown menu" data-dropdown-menu>
+
+      <div class="top-bar-left">
+        <ul class="menu">
+          <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+           <li><img src="{% static 'images/logo.png' %}" alt="  " width="100"></li>  
+                  <!--redirecciona a añadir empleado-->
+        </ul>
+      </div>
+
+      <li><a href="{% url 'home_app:inicio' %}">INICIO</a></li>
+      
+      <li><a href="{% url 'home_app:servicios' %}">SERVICIOS</a></li>
+      
+      <li><a href="{% url 'home_app:equipo' %}">EQUIPO</a></li>
+      
+      <li><a href="{% url 'home_app:contactanos' %}">CONTÁCTANOS</a></li>
+      
+    </ul>
+  </div>
+
+
+  <div class="top-bar-right">
+    <ul class="menu">
+      <!--<li><input type="search" placeholder="Buscar empleado"></li>-->
+      <li><a href="{% url 'home_app:ingresar' %}" class="button"><h5>INGRESAR</h5></a></li> 
+              <!--redirecciona a añadir empleado-->
+    </ul>
+  </div>
+</div>

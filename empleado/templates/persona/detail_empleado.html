@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load static %}  <!--siempre que usemos static debemos importar este-->
+
+{% block title %}
+    {{ object.first_name }}
+{% endblock title %}
+
+
+{% block content %}
+{% include "includes/header.html" %}
+<div class="grid-container">
+    <div class="grid-x grid-margin-x align-center">
+        <div class="cell large-4 card" style="width: 300px; margin-top: 10px;">
+            <div class="card-divider">
+                {{ empleado.get_job_display }}      <!--empleado es un modelo que se manda como objeto a este template-->
+                                    <!--que nos recupere el sig valor de su diccionario-->
+            </div>
+
+            <!--creamos validacion para que muestre una img cuando exista y otra cuando no-->
+            {% if empleado.avatar %}
+                <img src="{{ empleado.avatar.url }}"> <!--para accder a una variable de DJ dentro del template: los parent-->
+            {% else %}
+                <img src="{% static 'images/mantenimiento_camiones_2.jpg' %}">  
+            {% endif %}
+        
+            <div class="card-section">
+                <h4>{{ empleado.first_name }}</h4>
+                <p>{{ empleado.last_name }}</p>
+                <p>{{ empleado.departamento.name }}</p>
+                <p><span class="label">Habilidades:</span></p>
+                <ul class="vertical menu">
+                    
+                    {% for h in empleado.habilidades.all %}
+                        <li> {{h.habilidad}} </li>
+                    {% endfor %}
+                        
+                </ul>
+                <!--<p>{{ empleado.habilidades }}</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+ <!--
+<h1>Detalle de un empleado {{titulo}}</h1>
+
+{{empleado}}
+
+<h3>Todos los datos:</h3>
+<p>{{empleado.first_name}}</p>   accedo a cada uno de los atributos del modelo  
+<p>{{empleado.last_name}}</p>
+<p>{{empleado.departamento}}</p>
+<p>{{empleado.habilidades}}</p>
+-->
